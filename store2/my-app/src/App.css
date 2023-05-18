@@ -1,10 +1,19 @@
+body {
+    margin: 0%;
+}
+
 .header {
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #f1f1f1;
     background-color: #f1f1f1;
     z-index: 99;
     width: 100%;
+}
+
+.header_main {
+    height: 140px !important;
+    border-bottom: 1px solid #f1f1f1;
+
 }
 
 .topHeader {
@@ -13,23 +22,22 @@
     justify-content: flex-end;
     height: 40px;
     align-items: center;
-
 }
 
 * {
     font-family: 'Lato';
-    font-weight: 400;
+
 }
 
 .slide {
     position: absolute;
-    width: 100%;
+    right: 6%;
 }
 
 .login {
     display: flex !important;
     align-items: center;
-    min-width: 335px;
+    min-width: 374px;
     line-height: 1.5;
     color: #000;
     text-decoration: none;
@@ -59,38 +67,54 @@
     max-width: 160px;
 }
 
-.logo {
+.second_line {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 6px;
+    padding: 0 60px;
 
 }
 
 .icon_loctor::before {
     content: '\e92a';
     font-family: "iconography";
-    padding-left: 65px;
+    font-size: 24px;
+    align-items: center;
 }
 
-.searchs::before {
+.icon_loctor {
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+    font-size: 13px;
+}
+
+.img_logo {
+    width: 220px;
+    position: relative;
+    left: 117px;
+}
+
+.search::before {
     content: '\e94b';
     font-family: "iconography";
-    font-weight: 500;
-    border-radius: 20px;
-    border: 1px solid;
+    font-weight: 600;
+}
+
+.search input {
+    border: none;
     height: 38px;
+    outline: none;
 }
 
 .search {
     border-radius: 20px;
     border: 1px solid;
     height: 38px;
-
-
-}
-
-.img_logo {
-    width: 220px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
 }
 
 nav>div {
@@ -99,14 +123,39 @@ nav>div {
 }
 
 nav>div a {
-    padding: 0 20px;
-    color: #000;
-    text-decoration: none;
+    padding: 0 26px;
+    margin-top: 15px;
+    font-size: small;
 }
 
+.icons {
+    display: flex;
+    align-items: center;
+}
 
+.wishList::before {
+    content: '\e91c';
+    font-family: "iconography";
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.minicart::after {
+content: '\e90b';
+    font-family: "iconography";
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
 
 @font-face {
     font-family: "iconography";
-    src: url(../../../../Desarrollos/Javascript/icon/icomoon/fonts/icomoon.woff);
+    src: url(../fonts/icomoon.woff);
 }
